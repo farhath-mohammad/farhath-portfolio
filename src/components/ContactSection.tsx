@@ -119,104 +119,24 @@ export function ContactSection() {
               transition={{ duration: 0.3 }}
             >
               <Card>
-                <CardHeader>
-                  <CardTitle className="text-2xl">Send me a message</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <motion.div
-                        className="space-y-2"
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.1 }}
-                      >
-                        <Label htmlFor="name">Name</Label>
-                        <Input
-                          id="name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleChange}
-                          placeholder="Your Name"
-                          required
-                          className="transition-all duration-300 focus:scale-105"
-                        />
-                      </motion.div>
-                      <motion.div
-                        className="space-y-2"
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.5, delay: 0.2 }}
-                      >
-                        <Label htmlFor="email">Email</Label>
-                        <Input
-                          id="email"
-                          name="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={handleChange}
-                          placeholder="your.email@example.com"
-                          required
-                          className="transition-all duration-300 focus:scale-105"
-                        />
-                      </motion.div>
-                    </div>
-
-                    <motion.div
-                      className="space-y-2"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 0.3 }}
-                    >
-                      <Label htmlFor="subject">Subject</Label>
-                      <Input
-                        id="subject"
-                        name="subject"
-                        value={formData.subject}
-                        onChange={handleChange}
-                        placeholder="Project Collaboration"
-                        required
-                        className="transition-all duration-300 focus:scale-105"
-                      />
-                    </motion.div>
-
-                    <motion.div
-                      className="space-y-2"
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 0.4 }}
-                    >
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea
-                        id="message"
-                        name="message"
-                        value={formData.message}
-                        onChange={handleChange}
-                        placeholder="Tell me about your project ideas..."
-                        rows={6}
-                        required
-                        className="transition-all duration-300 focus:scale-105"
-                      />
-                    </motion.div>
-
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.5, delay: 0.5 }}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      <Button type="submit" size="lg" className="w-full gap-2">
-                        <Send className="h-4 w-4" />
-                        Send Message
-                      </Button>
-                    </motion.div>
-                  </form>
+                <CardContent className="p-6">
+                  <iframe
+                    width="680px"
+                    height="480px"
+                    src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__leHkkNUQkpPREpaV1RBMzBCQ0tOTTBUUDBMMUhHVS4u&embed=true"
+                    frameBorder="0"
+                    marginWidth={0}
+                    marginHeight={0}
+                    style={{
+                      border: "none",
+                      maxWidth: "100%",
+                      maxHeight: "100vh",
+                    }}
+                    allowFullScreen
+                    webkitallowfullscreen="true"
+                    mozallowfullscreen="true"
+                    msallowfullscreen="true"
+                  />
                 </CardContent>
               </Card>
             </motion.div>

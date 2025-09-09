@@ -15,7 +15,6 @@ export function ExperienceSection() {
       achievements: [
         "Achieved A+ grade with distinction",
         "Completed advanced projects in React and JavaScript",
-        "Participated in coding competitions and hackathons",
         "Led team projects on web application development",
       ],
       technologies: [
@@ -359,7 +358,7 @@ export function ExperienceSection() {
             </motion.div>
 
             {/* Stats */}
-            <motion.div className="space-y-4" variants={itemVariants}>
+            {/* <motion.div className="space-y-4" variants={itemVariants}>
               <h3 className="text-xl">Quick Stats</h3>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -400,7 +399,7 @@ export function ExperienceSection() {
                   </motion.div>
                 ))}
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Badge } from "./ui/badge";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import profileImage from "../assets/profile.png";
 
 export function AboutSection() {
   const interests = [
@@ -291,8 +292,8 @@ export function AboutSection() {
                 }}
                 transition={{ duration: 0.3 }}
               >
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop"
+                <img
+                  src={profileImage}
                   alt="About me"
                   className="w-full max-w-md h-96 object-cover rounded-lg shadow-lg"
                 />

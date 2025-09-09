@@ -199,8 +199,8 @@ export function HeroSection() {
                 variants={itemVariants}
                 className="text-lg text-muted-foreground max-w-2xl"
               >
-                Creating seamless web experiences with React, TypeScript, and
-                modern design tools.
+                Crafting intuitive and engaging digital experiences with modern
+                web technologies and thoughtful design.
               </motion.p>
             </div>
 

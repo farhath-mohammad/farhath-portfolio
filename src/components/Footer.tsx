@@ -64,8 +64,7 @@ export function Footer() {
             </motion.h3>
             <p className="text-muted-foreground">
               Frontend Developer passionate about crafting seamless, intuitive
-              web experiences with modern technologies like React, TypeScript,
-              and Next.js.
+              web experiences with modern technologies.
             </p>
             <div className="flex gap-2">
               {socialLinks.map((link, index) => (
