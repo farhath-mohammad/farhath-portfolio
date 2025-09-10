@@ -120,23 +120,25 @@ export function ContactSection() {
             >
               <Card>
                 <CardContent className="p-6">
-                  <iframe
-                    width="680px"
-                    height="480px"
-                    src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__leHkkNUQkpPREpaV1RBMzBCQ0tOTTBUUDBMMUhHVS4u&embed=true"
-                    frameBorder="0"
-                    marginWidth={0}
-                    marginHeight={0}
-                    style={{
-                      border: "none",
-                      maxWidth: "100%",
-                      maxHeight: "100vh",
-                    }}
-                    allowFullScreen
-                    webkitallowfullscreen="true"
-                    mozallowfullscreen="true"
-                    msallowfullscreen="true"
-                  />
+                  <div className="w-full">
+                    <iframe
+                      title="Contact Form"
+                      src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__leHkkNUQkpPREpaV1RBMzBCQ0tOTTBUUDBMMUhHVS4u&embed=true"
+                      frameBorder="0"
+                      marginWidth={0}
+                      marginHeight={0}
+                      style={{
+                        border: "none",
+                        width: "100%",
+                        minHeight: "480px",
+                        maxHeight: "100vh",
+                      }}
+                      allowFullScreen
+                      webkitallowfullscreen="true"
+                      mozallowfullscreen="true"
+                      msallowfullscreen="true"
+                    />
+                  </div>
                 </CardContent>
               </Card>
             </motion.div>
